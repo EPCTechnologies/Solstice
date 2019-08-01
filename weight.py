@@ -10,17 +10,15 @@ def squash(x):
 def bpm_diff(firstbpm, nextbpm, slowestbpm, fastestbpm):
     # Scores compatibility of BPMs using relative difference in BPMs
     # 0 for perfect match (same BPM), 1 for worst possible match
-    slowpenalty = 2.
+    slowpenalty = 6.
     if nextbpm >= firstbpm:
         return squash((nextbpm - firstbpm) / (fastestbpm - slowestbpm))
     else:  # penalise reductions in bpm
         return squash(slowpenalty * (firstbpm - nextbpm) / (fastestbpm - slowestbpm))
 
-def key_cam_diff(firstkey, nextkey):
+def key_cam_diff(firstkint, nextkint):
     # Scores compatibility of keys using heuristics based on Camelot's wheel
     # 0 for perfect match (same key), 1 for all incompatible matches
-    firstkint = ms.camelot2kint(ms.standkey2camelot(firstkey))
-    nextkint = ms.camelot2kint(ms.standkey2camelot(nextkey))
     diffkint = np.mod(nextkint - firstkint, 120)
     energypenalty = 0.025  # penalise drop in energy level associated with pitch drops
     if diffkint == 0:
@@ -52,12 +50,10 @@ def key_cam_diff(firstkey, nextkey):
     else:
         return squash(1.)
 
-def key_diss_diff(firstkey, nextkey):
+def key_diss_diff(firstfreq, nextfreq):
     # Scores compatibility of keys using Vassilakis' dissonance equation (2005)
     # 0 for perfect match (same key), 1 for all incompatible matches
     scalingfactor = 0.2
-    firstfreq = ms.n2freq(ms.root2n(ms.standkey2root(firstkey)))
-    nextfreq = ms.n2freq(ms.root2n(ms.standkey2root(nextkey)))
     maxfreq = max(firstfreq, nextfreq)
     minfreq = min(firstfreq, nextfreq)
     s1 = 0.0207; s2 = 18.96
@@ -66,18 +62,10 @@ def key_diss_diff(firstkey, nextkey):
     diss = squash((np.exp(-b1 * s * (maxfreq - minfreq)) - np.exp(-b2 * s * (maxfreq - minfreq))) / scalingfactor)
     return diss
 
-def key_diff(firstkey, nextkey):
+def key_diff(firstkint, nextkint, firstfreq, nextfreq):
     # Combines compatibility of keys using Camelot's wheel and Vassilakis' equation
     # using a Cobb-Douglas form with assigned weights
-    camweight = 2./3.; dissweight = 1. - camweight
-    keydiff = (key_cam_diff(firstkey, nextkey) ** camweight) * (key_diss_diff(firstkey, nextkey) ** dissweight)
+    camweight = 1. / 3.  # smaller weight, higher emphasis
+    dissweight = 1. - camweight
+    keydiff = (key_cam_diff(firstkint, nextkint) ** camweight) * (key_diss_diff(firstfreq, nextfreq) ** dissweight)
     return keydiff
-
-# TODO Shift this to main or another "util" file
-def score(firstkey, nextkey, firstbpm, nextbpm, slowestbpm, fastestbpm):
-    # Combines compatibility of keys and compatibility of BPMs
-    # using a Cobb-Douglas form with assigned weights
-    bpmweight = 2./3.; keyweight = 1. - bpmweight
-    transitionscore = (bpm_diff(firstbpm, nextbpm, slowestbpm, fastestbpm) ** keyweight) * \
-                      (key_diff(firstkey, nextkey) ** keyweight)
-    return transitionscore

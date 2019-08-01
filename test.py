@@ -1,79 +1,55 @@
-import numpy as np
-import random
-import operator
-import pandas as pd
-import matplotlib.pyplot as plt
+import numpy as np, random, operator, pandas as pd, matplotlib.pyplot as plt
 
-import weight as wt
 
-# https://towardsdatascience.com/evolution-of-a-salesman-a-complete-genetic-algorithm-tutorial-for-python-6fe5d2b3ca35
+class City:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
-class Track:
-    def __init__(self, id, bpm, kint, freq, slowestbpm, fastestbpm, name, key):
-        self.id = id
-        self.bpm = bpm
-        self.kint = kint
-        self.freq = freq
-        self.slowestbpm = slowestbpm
-        self.fastestbpm = fastestbpm
-        self.name = name
-        self.key = key
-
-    def distance(self, nexttrack):
-        # TODO CONVERT THIS TO DIFFERENT START AND END TRACKS
-        # TODO INCREASE EMPHASIS ON INCREASING BPM
-        # Combines compatibility of keys and compatibility of BPMs
-        # using a Cobb-Douglas form with assigned weights
-        firstbpm = self.bpm
-        nextbpm = nexttrack.bpm
-        firstkint = self.kint
-        nextkint = nexttrack.kint
-        firstfreq = self.freq
-        nextfreq = nexttrack.freq
-        slowestbpm = self.slowestbpm
-        fastestbpm = self.fastestbpm
-        bpmweight = 1. / 2.  # smaller weight, higher emphasis
-        keyweight = 1. - bpmweight
-        transitionscore = (wt.bpm_diff(firstbpm, nextbpm, slowestbpm, fastestbpm) ** keyweight) * \
-                          (wt.key_diff(firstkint, nextkint, firstfreq, nextfreq) ** keyweight)
-        return transitionscore
+    def distance(self, city):
+        xDis = abs(self.x - city.x)
+        yDis = abs(self.y - city.y)
+        distance = np.sqrt((xDis ** 2) + (yDis ** 2))
+        return distance
 
     def __repr__(self):
-        return str(self.id) + ": " + self.name + " (" + str(self.bpm) + ", " + str(self.key) + ")" + "\n"
+        return "(" + str(self.x) + "," + str(self.y) + ")"
+
 
 class Fitness:
     def __init__(self, route):
         self.route = route
-        self.distance = 0.
+        self.distance = 0
         self.fitness = 0.0
 
     def routeDistance(self):
         if self.distance == 0:
             pathDistance = 0
             for i in range(0, len(self.route)):
-                firsttrack = self.route[i]
+                fromCity = self.route[i]
+                toCity = None
                 if i + 1 < len(self.route):
-                    nexttrack = self.route[i + 1]
+                    toCity = self.route[i + 1]
                 else:
-                    nexttrack = self.route[0]
-                pathDistance += firsttrack.distance(nexttrack)
+                    toCity = self.route[0]
+                pathDistance += fromCity.distance(toCity)
             self.distance = pathDistance
         return self.distance
 
     def routeFitness(self):
         if self.fitness == 0:
-            self.fitness = 1. / self.routeDistance()
+            self.fitness = 1 / float(self.routeDistance())
         return self.fitness
 
-def createRoute(tracklist):
-    route = random.sample(tracklist, len(tracklist))
+def createRoute(cityList):
+    route = random.sample(cityList, len(cityList))
     return route
 
-def initialPopulation(popSize, tracklist):
+def initialPopulation(popSize, cityList):
     population = []
 
     for i in range(0, popSize):
-        population.append(createRoute(tracklist))
+        population.append(createRoute(cityList))
     return population
 
 def rankRoutes(population):
@@ -81,6 +57,7 @@ def rankRoutes(population):
     for i in range(0,len(population)):
         fitnessResults[i] = Fitness(population[i]).routeFitness()
     return sorted(fitnessResults.items(), key = operator.itemgetter(1), reverse = True)
+
 
 def selection(popRanked, eliteSize):
     selectionResults = []
@@ -145,11 +122,11 @@ def mutate(individual, mutationRate):
         if (random.random() < mutationRate):
             swapWith = int(random.random() * len(individual))
 
-            track1 = individual[swapped]
-            track2 = individual[swapWith]
+            city1 = individual[swapped]
+            city2 = individual[swapWith]
 
-            individual[swapped] = track2
-            individual[swapWith] = track1
+            individual[swapped] = city2
+            individual[swapWith] = city1
     return individual
 
 
@@ -169,25 +146,23 @@ def nextGeneration(currentGen, eliteSize, mutationRate):
     nextGeneration = mutatePopulation(children, mutationRate)
     return nextGeneration
 
+
 def geneticAlgorithm(population, popSize, eliteSize, mutationRate, generations):
     pop = initialPopulation(popSize, population)
-    print("Initial distance: " + str(1. / rankRoutes(pop)[0][1]))
-
-    initRouteIndex = rankRoutes(pop)[0][0]
-    initRoute = pop[initRouteIndex]
-    print(initRoute)
-
+    print(pop)
+    print("Initial distance: " + str(1 / rankRoutes(pop)[0][1]))
     progress = []
-    progress.append(1. / rankRoutes(pop)[0][1])
+    progress.append(1 / rankRoutes(pop)[0][1])
 
     for i in range(0, generations):
         pop = nextGeneration(pop, eliteSize, mutationRate)
-        progress.append(1. / rankRoutes(pop)[0][1])
+        progress.append(1 / rankRoutes(pop)[0][1])
 
-    print("Final distance: " + str(1. / rankRoutes(pop)[0][1]))
+    print("Final distance: " + str(1 / rankRoutes(pop)[0][1]))
     bestRouteIndex = rankRoutes(pop)[0][0]
     bestRoute = pop[bestRouteIndex]
 
+    print(bestRouteIndex)
     print(bestRoute)
 
     plt.plot(progress)
@@ -195,4 +170,11 @@ def geneticAlgorithm(population, popSize, eliteSize, mutationRate, generations):
     plt.xlabel('Generation')
     plt.show()
 
-    return
+    return bestRoute
+
+cityList = []
+
+for i in range(0,25):
+    cityList.append(City(x=int(random.random() * 200), y=int(random.random() * 200)))
+
+geneticAlgorithm(population=cityList, popSize=100, eliteSize=20, mutationRate=0.01, generations=500)
