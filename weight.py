@@ -1,5 +1,4 @@
 import numpy as np
-import music as ms
 
 def squash(x):
     # Sigmoidal: Cannot have f(0) = 0 exactly because this means that

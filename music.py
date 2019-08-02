@@ -1,4 +1,3 @@
-import numpy as np
 import bidict as bd # https://bidict.readthedocs.io/en/latest/basic-usage.html
 
 standkey_camelot = bd.bidict()  # A: minor, B: major
