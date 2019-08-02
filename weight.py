@@ -10,11 +10,16 @@ def squash(x):
 def bpm_diff(firstbpm, nextbpm, slowestbpm, fastestbpm):
     # Scores compatibility of BPMs using relative difference in BPMs
     # 0 for perfect match (same BPM), 1 for worst possible match
-    slowpenalty = 6.
+    # TODO FIND A MORE DYNAMIC WAY OF DETERMINING BPM WEIGHT
+    # If BPM range is large, penalise BPM drops more. Otherwise it doesn't really matter so much.
+    bpmrange = fastestbpm - slowestbpm
+    # m, c = np.polyfit([4, 18], [50, 1000], 1)
+    # slowpenalty = bpmrange * m + c
+    slowpenalty = 800. # TODO Fails because of the return to the same city criteria
     if nextbpm >= firstbpm:
-        return squash((nextbpm - firstbpm) / (fastestbpm - slowestbpm))
+        return squash((nextbpm - firstbpm) / bpmrange)
     else:  # penalise reductions in bpm
-        return squash(slowpenalty * (firstbpm - nextbpm) / (fastestbpm - slowestbpm))
+        return squash(slowpenalty * (firstbpm - nextbpm) / bpmrange)
 
 def key_cam_diff(firstkint, nextkint):
     # Scores compatibility of keys using heuristics based on Camelot's wheel
@@ -65,7 +70,7 @@ def key_diss_diff(firstfreq, nextfreq):
 def key_diff(firstkint, nextkint, firstfreq, nextfreq):
     # Combines compatibility of keys using Camelot's wheel and Vassilakis' equation
     # using a Cobb-Douglas form with assigned weights
-    camweight = 1. / 3.  # smaller weight, higher emphasis
+    camweight = 2. / 3.  # larger weight, higher emphasis
     dissweight = 1. - camweight
     keydiff = (key_cam_diff(firstkint, nextkint) ** camweight) * (key_diss_diff(firstfreq, nextfreq) ** dissweight)
     return keydiff

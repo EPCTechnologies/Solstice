@@ -2,7 +2,6 @@ import numpy as np
 import random
 import operator
 import pandas as pd
-import matplotlib.pyplot as plt
 
 import weight as wt
 
@@ -21,7 +20,6 @@ class Track:
 
     def distance(self, nexttrack):
         # TODO CONVERT THIS TO DIFFERENT START AND END TRACKS
-        # TODO INCREASE EMPHASIS ON INCREASING BPM
         # Combines compatibility of keys and compatibility of BPMs
         # using a Cobb-Douglas form with assigned weights
         firstbpm = self.bpm
@@ -32,10 +30,17 @@ class Track:
         nextfreq = nexttrack.freq
         slowestbpm = self.slowestbpm
         fastestbpm = self.fastestbpm
-        bpmweight = 1. / 2.  # smaller weight, higher emphasis
+        # TODO FIND A MORE DYNAMIC WAY OF DETERMINING BPM WEIGHT
+        # If BPM range is large, penalise BPM deviations more. Otherwise it doesn't really matter so much.
+        bpmrange = fastestbpm - slowestbpm
+        # m, c = np.polyfit([4, 18], [0.4, 0.75], 1)
+        # bpmweight = bpmrange * m + c  # larger weight, higher emphasis
+        bpmweight = 0.75
         keyweight = 1. - bpmweight
-        transitionscore = (wt.bpm_diff(firstbpm, nextbpm, slowestbpm, fastestbpm) ** keyweight) * \
+        transitionscore = (wt.bpm_diff(firstbpm, nextbpm, slowestbpm, fastestbpm) ** bpmweight) * \
                           (wt.key_diff(firstkint, nextkint, firstfreq, nextfreq) ** keyweight)
+        #transitionscore = (wt.bpm_diff(firstbpm, nextbpm, slowestbpm, fastestbpm) * bpmweight) + \
+        #                  (wt.key_diff(firstkint, nextkint, firstfreq, nextfreq) * keyweight)
         return transitionscore
 
     def __repr__(self):
@@ -175,7 +180,6 @@ def geneticAlgorithm(population, popSize, eliteSize, mutationRate, generations):
 
     initRouteIndex = rankRoutes(pop)[0][0]
     initRoute = pop[initRouteIndex]
-    print(initRoute)
 
     progress = []
     progress.append(1. / rankRoutes(pop)[0][1])
@@ -188,11 +192,4 @@ def geneticAlgorithm(population, popSize, eliteSize, mutationRate, generations):
     bestRouteIndex = rankRoutes(pop)[0][0]
     bestRoute = pop[bestRouteIndex]
 
-    print(bestRoute)
-
-    plt.plot(progress)
-    plt.ylabel('Distance')
-    plt.xlabel('Generation')
-    plt.show()
-
-    return
+    return (initRoute, bestRoute, progress)
