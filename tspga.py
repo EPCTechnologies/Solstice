@@ -31,16 +31,17 @@ class Track:
         slowestbpm = self.slowestbpm
         fastestbpm = self.fastestbpm
         # TODO FIND A MORE DYNAMIC WAY OF DETERMINING BPM WEIGHT
-        # If BPM range is large, penalise BPM deviations more. Otherwise it doesn't really matter so much.
-        bpmrange = fastestbpm - slowestbpm
-        # m, c = np.polyfit([4, 18], [0.4, 0.75], 1)
-        # bpmweight = bpmrange * m + c  # larger weight, higher emphasis
-        bpmweight = 0.75
+        bpmweight = 0.6
         keyweight = 1. - bpmweight
         transitionscore = (wt.bpm_diff(firstbpm, nextbpm, slowestbpm, fastestbpm) ** bpmweight) * \
                           (wt.key_diff(firstkint, nextkint, firstfreq, nextfreq) ** keyweight)
-        #transitionscore = (wt.bpm_diff(firstbpm, nextbpm, slowestbpm, fastestbpm) * bpmweight) + \
-        #                  (wt.key_diff(firstkint, nextkint, firstfreq, nextfreq) * keyweight)
+        # maxweight = 0.8
+        # minweight = 1. - maxweight
+        # bpmdiff = wt.bpm_diff(firstbpm, nextbpm, slowestbpm, fastestbpm)
+        # keydiff = wt.key_diff(firstkint, nextkint, firstfreq, nextfreq)
+        # maxdiff = max(bpmdiff, keydiff)
+        # mindiff = min(bpmdiff, keydiff) # TODO Update
+        # transitionscore = maxweight * maxdiff + minweight * mindiff
         return transitionscore
 
     def __repr__(self):
@@ -59,9 +60,10 @@ class Fitness:
                 firsttrack = self.route[i]
                 if i + 1 < len(self.route):
                     nexttrack = self.route[i + 1]
-                else:
-                    nexttrack = self.route[0]
-                pathDistance += firsttrack.distance(nexttrack)
+                    pathDistance += firsttrack.distance(nexttrack)
+                # else: # Do not need to return to start node
+                    # nexttrack = self.route[0]
+                    # pathDistance += firsttrack.distance(nexttrack) # This is not required
             self.distance = pathDistance
         return self.distance
 

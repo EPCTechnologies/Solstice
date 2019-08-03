@@ -4,20 +4,20 @@ def squash(x):
     # Sigmoidal: Cannot have f(0) = 0 exactly because this means that
     # an exact match in key or bpm alone would be sufficient.
     sigmoidtight = 3.
-    return 1. / (1. + np.exp(sigmoidtight - 2. * sigmoidtight * x))
+    return np.exp(x) / (1. + np.exp(sigmoidtight - 2. * sigmoidtight * x))
 
 def bpm_diff(firstbpm, nextbpm, slowestbpm, fastestbpm):
     # Scores compatibility of BPMs using relative difference in BPMs
     # 0 for perfect match (same BPM), 1 for worst possible match
-    # TODO FIND A MORE DYNAMIC WAY OF DETERMINING BPM WEIGHT
-    # If BPM range is large, penalise BPM drops more. Otherwise it doesn't really matter so much.
+    # TODO IF ALLOW BPM TO DROP, IT CANNOT DROP CONSECUTIVELY
     bpmrange = fastestbpm - slowestbpm
-    # m, c = np.polyfit([4, 18], [50, 1000], 1)
-    # slowpenalty = bpmrange * m + c
-    slowpenalty = 800. # TODO Fails because of the return to the same city criteria
+    slowpenalty = 5.
+    bpmdropthreshold = 0.99
     if nextbpm >= firstbpm:
         return squash((nextbpm - firstbpm) / bpmrange)
-    else:  # penalise reductions in bpm
+    elif (firstbpm - nextbpm) < bpmdropthreshold:  # if reduction in BPM is small it doesn't matter
+        return squash((nextbpm - firstbpm) / bpmrange)
+    else:  # otherwise penalise reduction in BPM
         return squash(slowpenalty * (firstbpm - nextbpm) / bpmrange)
 
 def key_cam_diff(firstkint, nextkint):

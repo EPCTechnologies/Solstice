@@ -6,7 +6,7 @@ import music as ms
 import tspga as tg
 
 # Import library data
-library_df = pd.read_excel('./excel/library.xlsx', sheet_name=0)# print(library_df)
+library_df = pd.read_excel('./excel/library2.xlsx', sheet_name=0)# print(library_df)
 print("Library Details:")
 print(library_df)
 tracklist = []
@@ -39,7 +39,7 @@ with pd.ExcelWriter('./excel/adjacency.xlsx', mode='w') as writer:  # doctest: +
 
 # Asymmetric Travelling Salesman Problem via Genetic Algorithm
 initRoute, bestRoute, progress = \
-    tg.geneticAlgorithm(population=tracklist, popSize=100, eliteSize=20, mutationRate=0.015, generations=1500)
+    tg.geneticAlgorithm(population=tracklist, popSize=100, eliteSize=20, mutationRate=0.125/numtracks, generations=numtracks*50)
 
 # Retrieve initial random-generated route and best route obtained
 initRouteIds = [track.id for track in initRoute]
@@ -67,5 +67,5 @@ print(bestRouteWeight)
 plt.plot(progress)
 plt.ylabel('Distance')
 plt.xlabel('Generation')
-plt.savefig('./output/progress.png', format="png")
+plt.savefig('./output/progress2.png', format="png")
 #plt.show()

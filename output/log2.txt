@@ -1,0 +1,75 @@
+C:\Users\weexi\PythonWorkspace\Solstice\venv\Scripts\python.exe C:/Users/weexi/PythonWorkspace/Solstice/main.py
+Library Details:
+    ID                                              Track  BPM  Key
+0    1  Above & Beyond vs. Armin van Buuren - Show Me ...  128   Em
+1    2  Armin van Buuren & Avian Grays feat. Jordan Sh...  128   C#
+2    3  Armin van Buuren, Sunnery James & Ryan Marcian...  128  Abm
+3    4                    Blasterjaxx - Children Of Today  130  F#m
+4    5          Calvin Harris - I'm Not Alone (2019 Edit)  128  D#m
+5    6  David Guetta & MORTEN feat. Aloe Blacc - Never...  126   F#
+6    7     Dimitri Vegas and Like Mike & Hardwell - Unity  130   Fm
+7    8                Fedde Le Grand - All Over The World  126  F#m
+8    9                         Francisco Cunha - For Life  128    E
+9   10         Hardwell feat. Trevor Guthrie - Summer Air  126    E
+10  11                                       Kryder - MTV  125   Gm
+11  12                 KSHMR & Timmy Trumpet - The People  135   Em
+12  13            Manse, Greencoast & David Shane - Shine  128   A#
+13  14  Nicky Romero & Stadiumx feat. Sam Martin - Lov...  128   F#
+14  15                     NWYR - Artificial Intelligence  132   Am
+15  16  R3HAB × A Touch Of Class (ATC) - All Around Th...  125   Am
+16  17              Steve Aoki feat. BTS - Waste It On Me  126    G
+17  18          van Helen - Jump (Armin van Buuren Remix)  130    C
+18  19                 W&W vs. Nicky Romero - Ups & Downs  130   G#
+19  20   Will Sparks feat. Luciana - My Spine Is Tingling  127   G#
+Initial distance: 12.907124249898807
+Final distance: 2.3361499841604023
+Initial Route Details:
+[6: David Guetta & MORTEN feat. Aloe Blacc - Never Be Alone (126, F#)
+, 8: Fedde Le Grand - All Over The World (126, F#m)
+, 9: Francisco Cunha - For Life (128, E)
+, 11: Kryder - MTV (125, Gm)
+, 3: Armin van Buuren, Sunnery James & Ryan Marciano - You Are Too (128, Abm)
+, 19: W&W vs. Nicky Romero - Ups & Downs (130, Ab)
+, 2: Armin van Buuren & Avian Grays feat. Jordan Shaw - Something Real (128, Db)
+, 1: Above & Beyond vs. Armin van Buuren - Show Me Love (128, Em)
+, 5: Calvin Harris - I'm Not Alone (2019 Edit) (128, Ebm)
+, 4: Blasterjaxx - Children Of Today (130, F#m)
+, 10: Hardwell feat. Trevor Guthrie - Summer Air (126, E)
+, 7: Dimitri Vegas and Like Mike & Hardwell - Unity (130, Fm)
+, 13: Manse, Greencoast & David Shane - Shine (128, Bb)
+, 17: Steve Aoki feat. BTS - Waste It On Me (126, G)
+, 16: R3HAB × A Touch Of Class (ATC) - All Around The World (La La La) (125, Am)
+, 20: Will Sparks feat. Luciana - My Spine Is Tingling (127, Ab)
+, 14: Nicky Romero & Stadiumx feat. Sam Martin - Love You Forever (128, F#)
+, 18: van Helen - Jump (Armin van Buuren Remix) (130, C)
+, 15: NWYR - Artificial Intelligence (132, Am)
+, 12: KSHMR & Timmy Trumpet - The People (135, Em)
+]
+[6, 8, 9, 11, 3, 19, 2, 1, 5, 4, 10, 7, 13, 17, 16, 20, 14, 18, 15, 12]
+[0.1378043043185038, 0.24423001880763537, 2.4555084722642118, 0.5200363928242889, 0.1962704612407541, 0.65256201852459, 0.16829496289776874, 0.22957945401095536, 0.2469203904845711, 2.3211615471968248, 0.97376675087445, 1.526383720322764, 1.5196421202703083, 0.4513264413563344, 0.2998366800006842, 0.2849718935731182, 0.3027543478446957, 0.1996225468807576, 0.17645172620559094]
+Best Route Details:
+[11: Kryder - MTV (125, Gm)
+, 16: R3HAB × A Touch Of Class (ATC) - All Around The World (La La La) (125, Am)
+, 17: Steve Aoki feat. BTS - Waste It On Me (126, G)
+, 8: Fedde Le Grand - All Over The World (126, F#m)
+, 10: Hardwell feat. Trevor Guthrie - Summer Air (126, E)
+, 6: David Guetta & MORTEN feat. Aloe Blacc - Never Be Alone (126, F#)
+, 20: Will Sparks feat. Luciana - My Spine Is Tingling (127, Ab)
+, 2: Armin van Buuren & Avian Grays feat. Jordan Shaw - Something Real (128, Db)
+, 14: Nicky Romero & Stadiumx feat. Sam Martin - Love You Forever (128, F#)
+, 5: Calvin Harris - I'm Not Alone (2019 Edit) (128, Ebm)
+, 13: Manse, Greencoast & David Shane - Shine (128, Bb)
+, 1: Above & Beyond vs. Armin van Buuren - Show Me Love (128, Em)
+, 9: Francisco Cunha - For Life (128, E)
+, 3: Armin van Buuren, Sunnery James & Ryan Marciano - You Are Too (128, Abm)
+, 19: W&W vs. Nicky Romero - Ups & Downs (130, Ab)
+, 7: Dimitri Vegas and Like Mike & Hardwell - Unity (130, Fm)
+, 18: van Helen - Jump (Armin van Buuren Remix) (130, C)
+, 4: Blasterjaxx - Children Of Today (130, F#m)
+, 15: NWYR - Artificial Intelligence (132, Am)
+, 12: KSHMR & Timmy Trumpet - The People (135, Em)
+]
+[11, 16, 17, 8, 10, 6, 20, 2, 14, 5, 13, 1, 9, 3, 19, 7, 18, 4, 15, 12]
+[0.07841906405481243, 0.11664297589210099, 0.12985638186764134, 0.11225180836329121, 0.11225180836329121, 0.1621418969302603, 0.08805458461315883, 0.06060171605016904, 0.08249038019664477, 0.14387255298393128, 0.13988853718324157, 0.09020887076098905, 0.07637830058652412, 0.1962704612407541, 0.08016142600742764, 0.1420797670182313, 0.13915047462770586, 0.20897725121463598, 0.17645172620559094]
+
+Process finished with exit code 0

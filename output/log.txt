@@ -1,0 +1,90 @@
+C:\Users\weexi\PythonWorkspace\Solstice\venv\Scripts\python.exe C:/Users/weexi/PythonWorkspace/Solstice/main.py
+Library Details:
+    ID                                              Track  BPM  Key
+0    1             Armin van Buuren & Shapov - Our Origin  132   Am
+1    2  Armin van Buuren feat. Sam Martin - Wild Wild ...  138   Bb
+2    3     Beatsole & Sebdell with Tompsohn - Nightingale  130   Am
+3    4                     Billy Gillies - Open Your Mind  138   Bm
+4    5                    Claus Backslash - Pure Illusion  136   Bb
+5    6                   Claus Backslash - Secret Journey  135    C
+6    7                         Cosmic Gate - Come With Me  128   Dm
+7    8                     Daniel Kandi - JP8080 Paradise  137   Bb
+8    9                          Davey Asprey  - Aftermath  135   Gm
+9   10                       David Broaders - Everlasting  122   Am
+10  11       Gareth Emery & Ashley Wallbridge - Amber Sun  134  Abm
+11  12                    Giuseppe Ottaviani - Tranceland  138   Gm
+12  13                                  Gouryella - Surga  135   Bm
+13  14                        GXD feat. Elle Vee - Voices  132   Cm
+14  15                                   Hasith - Eclipse  122    D
+15  16  ilan Bluestone feat. Ellen Smith - Rival (Rafa...  128   Am
+16  17                           James Dymond - Goldeneye  138   Am
+17  18                             Luke Anders - Vanguard  128   Bm
+18  19  Markus Schulz & Smiley - The Dreamers (Markus ...  132   Am
+19  20  Patrik Humann & Hanna Finsen - A Cage Of Thoughts  132   Dm
+20  21         Rising Star feat. Alexandra Badoi - Cosmos  132   Bm
+21  22  Rub!k featuring Christina Novelli - Never Grow...  132  F#m
+22  23  Steve Allen & Cathy Burton - My Awakening (F.G...  138   F#
+23  24                      Vintage & Morelli - Ascension  124  F#m
+24  25  Yuri Kane - Right Back (Solis & Sean Truby Ext...  138   Em
+Initial distance: 19.46207560800355
+Final distance: 2.9247938598883323
+Initial Route Details:
+[15: Hasith - Eclipse (122, D)
+, 11: Gareth Emery & Ashley Wallbridge - Amber Sun (134, Abm)
+, 2: Armin van Buuren feat. Sam Martin - Wild Wild Son (Richard Durand Remix) (138, Bb)
+, 5: Claus Backslash - Pure Illusion (136, Bb)
+, 13: Gouryella - Surga (135, Bm)
+, 23: Steve Allen & Cathy Burton - My Awakening (F.G. Noise Remix) (138, F#)
+, 14: GXD feat. Elle Vee - Voices (132, Cm)
+, 20: Patrik Humann & Hanna Finsen - A Cage Of Thoughts (132, Dm)
+, 7: Cosmic Gate - Come With Me (128, Dm)
+, 24: Vintage & Morelli - Ascension (124, F#m)
+, 18: Luke Anders - Vanguard (128, Bm)
+, 19: Markus Schulz & Smiley - The Dreamers (Markus Schulz's In Bloom Remix) (132, Am)
+, 17: James Dymond - Goldeneye (138, Am)
+, 22: Rub!k featuring Christina Novelli - Never Grow Old (132, F#m)
+, 12: Giuseppe Ottaviani - Tranceland (138, Gm)
+, 9: Davey Asprey  - Aftermath (135, Gm)
+, 3: Beatsole & Sebdell with Tompsohn - Nightingale (130, Am)
+, 16: ilan Bluestone feat. Ellen Smith - Rival (Rafaël Frost Remix) (128, Am)
+, 10: David Broaders - Everlasting (122, Am)
+, 21: Rising Star feat. Alexandra Badoi - Cosmos (132, Bm)
+, 8: Daniel Kandi - JP8080 Paradise (137, Bb)
+, 4: Billy Gillies - Open Your Mind (138, Bm)
+, 6: Claus Backslash - Secret Journey (135, C)
+, 1: Armin van Buuren & Shapov - Our Origin (132, Am)
+, 25: Yuri Kane - Right Back (Solis & Sean Truby Extended Remix) (138, Em)
+]
+[15, 11, 2, 5, 13, 23, 14, 20, 7, 24, 18, 19, 17, 22, 12, 9, 3, 16, 10, 21, 8, 4, 6, 1, 25]
+[1.2003099136551951, 0.359329510664377, 0.3407665826979679, 0.7456243094183167, 0.287319529845562, 2.669246695731481, 0.11842890254593322, 0.6212239788877445, 1.9297980926716873, 0.15458646029049067, 0.5607894334052106, 0.18701666577664214, 2.644912696105396, 0.6632563952850417, 0.49713350838597753, 1.2460055711140743, 0.3407665826979679, 0.9097443297271742, 0.8793228820924434, 0.7456243094183167, 0.2961749208604658, 1.4270965225622898, 0.961748675400448, 0.22450415387168515]
+Best Route Details:
+[10: David Broaders - Everlasting (122, Am)
+, 15: Hasith - Eclipse (122, D)
+, 24: Vintage & Morelli - Ascension (124, F#m)
+, 16: ilan Bluestone feat. Ellen Smith - Rival (Rafaël Frost Remix) (128, Am)
+, 7: Cosmic Gate - Come With Me (128, Dm)
+, 18: Luke Anders - Vanguard (128, Bm)
+, 21: Rising Star feat. Alexandra Badoi - Cosmos (132, Bm)
+, 22: Rub!k featuring Christina Novelli - Never Grow Old (132, F#m)
+, 20: Patrik Humann & Hanna Finsen - A Cage Of Thoughts (132, Dm)
+, 19: Markus Schulz & Smiley - The Dreamers (Markus Schulz's In Bloom Remix) (132, Am)
+, 3: Beatsole & Sebdell with Tompsohn - Nightingale (130, Am)
+, 1: Armin van Buuren & Shapov - Our Origin (132, Am)
+, 14: GXD feat. Elle Vee - Voices (132, Cm)
+, 11: Gareth Emery & Ashley Wallbridge - Amber Sun (134, Abm)
+, 13: Gouryella - Surga (135, Bm)
+, 6: Claus Backslash - Secret Journey (135, C)
+, 9: Davey Asprey  - Aftermath (135, Gm)
+, 5: Claus Backslash - Pure Illusion (136, Bb)
+, 8: Daniel Kandi - JP8080 Paradise (137, Bb)
+, 2: Armin van Buuren feat. Sam Martin - Wild Wild Son (Richard Durand Remix) (138, Bb)
+, 12: Giuseppe Ottaviani - Tranceland (138, Gm)
+, 17: James Dymond - Goldeneye (138, Am)
+, 25: Yuri Kane - Right Back (Solis & Sean Truby Extended Remix) (138, Em)
+, 4: Billy Gillies - Open Your Mind (138, Bm)
+, 23: Steve Allen & Cathy Burton - My Awakening (F.G. Noise Remix) (138, F#)
+]
+[10, 15, 24, 16, 7, 18, 21, 22, 20, 19, 3, 1, 14, 11, 13, 6, 9, 5, 8, 2, 12, 17, 25, 4, 23]
+[0.14499555282400667, 0.12722049885134468, 0.2504261332272389, 0.06215334366813232, 0.17442809239125953, 0.1236521487583615, 0.0567892975368071, 0.147325864280419, 0.059531369470716945, 0.3407665826979679, 0.07772651153726295, 0.126226880249115, 0.22602178725812985, 0.12325595773710372, 0.13614310351141642, 0.13819691295270936, 0.08603464761505951, 0.060877193801820634, 0.060877193801820634, 0.06980276224552122, 0.07841906405481243, 0.0569323888068445, 0.058673653916249055, 0.13831691869421364]
+
+Process finished with exit code 0

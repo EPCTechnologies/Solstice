@@ -1,0 +1,150 @@
+C:\Users\weexi\PythonWorkspace\Solstice\venv\Scripts\python.exe C:/Users/weexi/PythonWorkspace/Solstice/main.py
+Library Details:
+    ID                                              Track  BPM  Key
+0    1  Above & Beyond vs. Armin van Buuren - Show Me ...  128   Em
+1    2  Armin van Buuren & Avian Grays feat. Jordan Sh...  128   C#
+2    3             Armin van Buuren & Shapov - Our Origin  132   Am
+3    4  Armin van Buuren feat. Sam Martin - Wild Wild ...  138   Bb
+4    5  Armin van Buuren, Sunnery James & Ryan Marcian...  128  Abm
+5    6     Beatsole & Sebdell with Tompsohn - Nightingale  130   Am
+6    7                     Billy Gillies - Open Your Mind  138   Bm
+7    8                    Blasterjaxx - Children Of Today  130  F#m
+8    9          Calvin Harris - I'm Not Alone (2019 Edit)  128  D#m
+9   10                    Claus Backslash - Pure Illusion  136   Bb
+10  11                   Claus Backslash - Secret Journey  135    C
+11  12                         Cosmic Gate - Come With Me  128   Dm
+12  13                     Daniel Kandi - JP8080 Paradise  137   Bb
+13  14                          Davey Asprey  - Aftermath  135   Gm
+14  15                       David Broaders - Everlasting  122   Am
+15  16  David Guetta & MORTEN feat. Aloe Blacc - Never...  126   F#
+16  17     Dimitri Vegas and Like Mike & Hardwell - Unity  130   Fm
+17  18                Fedde Le Grand - All Over The World  126  F#m
+18  19                         Francisco Cunha - For Life  128    E
+19  20       Gareth Emery & Ashley Wallbridge - Amber Sun  134  Abm
+20  21                    Giuseppe Ottaviani - Tranceland  138   Gm
+21  22                                  Gouryella - Surga  135   Bm
+22  23                        GXD feat. Elle Vee - Voices  132   Cm
+23  24         Hardwell feat. Trevor Guthrie - Summer Air  126    E
+24  25                                   Hasith - Eclipse  122    D
+25  26  ilan Bluestone feat. Ellen Smith - Rival (Rafa...  128   Am
+26  27                           James Dymond - Goldeneye  138   Am
+27  28                                       Kryder - MTV  125   Gm
+28  29                 KSHMR & Timmy Trumpet - The People  135   Em
+29  30                             Luke Anders - Vanguard  128   Bm
+30  31            Manse, Greencoast & David Shane - Shine  128   A#
+31  32  Markus Schulz & Smiley - The Dreamers (Markus ...  132   Am
+32  33  Nicky Romero & Stadiumx feat. Sam Martin - Lov...  128   F#
+33  34                     NWYR - Artificial Intelligence  132   Am
+34  35  Patrik Humann & Hanna Finsen - A Cage Of Thoughts  132   Dm
+35  36  R3HAB × A Touch Of Class (ATC) - All Around Th...  125   Am
+36  37         Rising Star feat. Alexandra Badoi - Cosmos  132   Bm
+37  38  Rub!k featuring Christina Novelli - Never Grow...  132  F#m
+38  39  Steve Allen & Cathy Burton - My Awakening (F.G...  138   F#
+39  40              Steve Aoki feat. BTS - Waste It On Me  126    G
+40  41          van Helen - Jump (Armin van Buuren Remix)  130    C
+41  42                      Vintage & Morelli - Ascension  124  F#m
+42  43                 W&W vs. Nicky Romero - Ups & Downs  130   G#
+43  44   Will Sparks feat. Luciana - My Spine Is Tingling  127   G#
+44  45  Yuri Kane - Right Back (Solis & Sean Truby Ext...  138   Em
+Initial distance: 49.08043902613676
+Final distance: 6.085933619898406
+Initial Route Details:
+[2: Armin van Buuren & Avian Grays feat. Jordan Shaw - Something Real (128, Db)
+, 42: Vintage & Morelli - Ascension (124, F#m)
+, 8: Blasterjaxx - Children Of Today (130, F#m)
+, 3: Armin van Buuren & Shapov - Our Origin (132, Am)
+, 12: Cosmic Gate - Come With Me (128, Dm)
+, 22: Gouryella - Surga (135, Bm)
+, 27: James Dymond - Goldeneye (138, Am)
+, 7: Billy Gillies - Open Your Mind (138, Bm)
+, 6: Beatsole & Sebdell with Tompsohn - Nightingale (130, Am)
+, 15: David Broaders - Everlasting (122, Am)
+, 19: Francisco Cunha - For Life (128, E)
+, 16: David Guetta & MORTEN feat. Aloe Blacc - Never Be Alone (126, F#)
+, 18: Fedde Le Grand - All Over The World (126, F#m)
+, 23: GXD feat. Elle Vee - Voices (132, Cm)
+, 4: Armin van Buuren feat. Sam Martin - Wild Wild Son (Richard Durand Remix) (138, Bb)
+, 14: Davey Asprey  - Aftermath (135, Gm)
+, 28: Kryder - MTV (125, Gm)
+, 25: Hasith - Eclipse (122, D)
+, 38: Rub!k featuring Christina Novelli - Never Grow Old (132, F#m)
+, 20: Gareth Emery & Ashley Wallbridge - Amber Sun (134, Abm)
+, 21: Giuseppe Ottaviani - Tranceland (138, Gm)
+, 31: Manse, Greencoast & David Shane - Shine (128, Bb)
+, 36: R3HAB × A Touch Of Class (ATC) - All Around The World (La La La) (125, Am)
+, 35: Patrik Humann & Hanna Finsen - A Cage Of Thoughts (132, Dm)
+, 39: Steve Allen & Cathy Burton - My Awakening (F.G. Noise Remix) (138, F#)
+, 29: KSHMR & Timmy Trumpet - The People (135, Em)
+, 9: Calvin Harris - I'm Not Alone (2019 Edit) (128, Ebm)
+, 40: Steve Aoki feat. BTS - Waste It On Me (126, G)
+, 32: Markus Schulz & Smiley - The Dreamers (Markus Schulz's In Bloom Remix) (132, Am)
+, 41: van Helen - Jump (Armin van Buuren Remix) (130, C)
+, 43: W&W vs. Nicky Romero - Ups & Downs (130, Ab)
+, 37: Rising Star feat. Alexandra Badoi - Cosmos (132, Bm)
+, 30: Luke Anders - Vanguard (128, Bm)
+, 17: Dimitri Vegas and Like Mike & Hardwell - Unity (130, Fm)
+, 13: Daniel Kandi - JP8080 Paradise (137, Bb)
+, 24: Hardwell feat. Trevor Guthrie - Summer Air (126, E)
+, 44: Will Sparks feat. Luciana - My Spine Is Tingling (127, Ab)
+, 1: Above & Beyond vs. Armin van Buuren - Show Me Love (128, Em)
+, 5: Armin van Buuren, Sunnery James & Ryan Marciano - You Are Too (128, Abm)
+, 11: Claus Backslash - Secret Journey (135, C)
+, 45: Yuri Kane - Right Back (Solis & Sean Truby Extended Remix) (138, Em)
+, 10: Claus Backslash - Pure Illusion (136, Bb)
+, 33: Nicky Romero & Stadiumx feat. Sam Martin - Love You Forever (128, F#)
+, 34: NWYR - Artificial Intelligence (132, Am)
+, 26: ilan Bluestone feat. Ellen Smith - Rival (Rafaël Frost Remix) (128, Am)
+]
+[2, 42, 8, 3, 12, 22, 27, 7, 6, 15, 19, 16, 18, 23, 4, 14, 28, 25, 38, 20, 21, 31, 36, 35, 39, 29, 9, 40, 32, 41, 43, 37, 30, 17, 13, 24, 44, 1, 5, 11, 45, 10, 33, 34, 26]
+[1.851859280115805, 0.18701666577664214, 0.15741537796934482, 0.8141367753026056, 0.8240992990364696, 0.4467898839244875, 0.12237894677956467, 6.004051520911047, 1.323872790021192, 0.5468058973164224, 0.8065568976328216, 0.1378043043185038, 0.5487185804397653, 0.47771931380880767, 0.7316953756491403, 1.9262304775927535, 1.4756937319222458, 0.5577568552259007, 0.17865375710251943, 0.5936181475099587, 2.7222437503373245, 1.3764473672563835, 0.2936483811035892, 0.5809569771594377, 2.068034721389758, 5.312817343383165, 1.0495208160719713, 0.32084450545832494, 0.6330048607170944, 0.13791022401323266, 0.22591053082858686, 0.6212239788877445, 0.22859899166536643, 0.6542143746238216, 6.85338753843851, 0.18607371336662884, 0.18607371336662884, 0.1449591839028023, 0.6515677456606902, 0.16457446380537738, 1.0051336028347333, 3.852271261779146, 0.35949565989576776, 0.6212239788877445]
+Best Route Details:
+[15: David Broaders - Everlasting (122, Am)
+, 25: Hasith - Eclipse (122, D)
+, 42: Vintage & Morelli - Ascension (124, F#m)
+, 28: Kryder - MTV (125, Gm)
+, 36: R3HAB × A Touch Of Class (ATC) - All Around The World (La La La) (125, Am)
+, 44: Will Sparks feat. Luciana - My Spine Is Tingling (127, Ab)
+, 31: Manse, Greencoast & David Shane - Shine (128, Bb)
+, 33: Nicky Romero & Stadiumx feat. Sam Martin - Love You Forever (128, F#)
+, 2: Armin van Buuren & Avian Grays feat. Jordan Shaw - Something Real (128, Db)
+, 1: Above & Beyond vs. Armin van Buuren - Show Me Love (128, Em)
+, 26: ilan Bluestone feat. Ellen Smith - Rival (Rafaël Frost Remix) (128, Am)
+, 19: Francisco Cunha - For Life (128, E)
+, 24: Hardwell feat. Trevor Guthrie - Summer Air (126, E)
+, 18: Fedde Le Grand - All Over The World (126, F#m)
+, 16: David Guetta & MORTEN feat. Aloe Blacc - Never Be Alone (126, F#)
+, 40: Steve Aoki feat. BTS - Waste It On Me (126, G)
+, 30: Luke Anders - Vanguard (128, Bm)
+, 9: Calvin Harris - I'm Not Alone (2019 Edit) (128, Ebm)
+, 5: Armin van Buuren, Sunnery James & Ryan Marciano - You Are Too (128, Abm)
+, 12: Cosmic Gate - Come With Me (128, Dm)
+, 6: Beatsole & Sebdell with Tompsohn - Nightingale (130, Am)
+, 17: Dimitri Vegas and Like Mike & Hardwell - Unity (130, Fm)
+, 43: W&W vs. Nicky Romero - Ups & Downs (130, Ab)
+, 8: Blasterjaxx - Children Of Today (130, F#m)
+, 41: van Helen - Jump (Armin van Buuren Remix) (130, C)
+, 32: Markus Schulz & Smiley - The Dreamers (Markus Schulz's In Bloom Remix) (132, Am)
+, 34: NWYR - Artificial Intelligence (132, Am)
+, 23: GXD feat. Elle Vee - Voices (132, Cm)
+, 3: Armin van Buuren & Shapov - Our Origin (132, Am)
+, 35: Patrik Humann & Hanna Finsen - A Cage Of Thoughts (132, Dm)
+, 37: Rising Star feat. Alexandra Badoi - Cosmos (132, Bm)
+, 38: Rub!k featuring Christina Novelli - Never Grow Old (132, F#m)
+, 20: Gareth Emery & Ashley Wallbridge - Amber Sun (134, Abm)
+, 11: Claus Backslash - Secret Journey (135, C)
+, 29: KSHMR & Timmy Trumpet - The People (135, Em)
+, 22: Gouryella - Surga (135, Bm)
+, 39: Steve Allen & Cathy Burton - My Awakening (F.G. Noise Remix) (138, F#)
+, 7: Billy Gillies - Open Your Mind (138, Bm)
+, 45: Yuri Kane - Right Back (Solis & Sean Truby Extended Remix) (138, Em)
+, 4: Armin van Buuren feat. Sam Martin - Wild Wild Son (Richard Durand Remix) (138, Bb)
+, 21: Giuseppe Ottaviani - Tranceland (138, Gm)
+, 14: Davey Asprey  - Aftermath (135, Gm)
+, 10: Claus Backslash - Pure Illusion (136, Bb)
+, 13: Daniel Kandi - JP8080 Paradise (137, Bb)
+, 27: James Dymond - Goldeneye (138, Am)
+]
+[15, 25, 42, 28, 36, 44, 31, 33, 2, 1, 26, 19, 24, 18, 16, 40, 30, 9, 5, 12, 6, 17, 43, 8, 41, 32, 34, 23, 3, 35, 37, 38, 20, 11, 29, 22, 39, 7, 45, 4, 21, 14, 10, 13, 27]
+[0.14499555282400667, 0.12722049885134468, 0.21590155052966103, 0.07841906405481243, 0.22585666160812995, 0.10065586020469597, 0.1380021779160507, 0.05804519814743058, 0.16829496289776874, 0.05943989461052325, 0.1386654340733797, 0.3407665826979679, 0.11646658020885665, 0.09020887076098905, 0.16819631318080744, 0.11912369581236466, 0.1521759829131844, 0.06013021025834446, 0.13866079398922748, 0.09756627271089378, 0.13807241057977476, 0.07697096302769504, 0.19158658294695385, 0.13915047462770586, 0.15036880084216994, 0.04742587317756679, 0.126226880249115, 0.18120319563678783, 0.06215334366813232, 0.17442809239125953, 0.0567892975368071, 0.17865375710251943, 0.177025468842128, 0.0792268898029585, 0.058673653916249055, 0.287319529845562, 0.13831691869421364, 0.06125785125631122, 0.13988853718324157, 0.06980276224552122, 0.49713350838597753, 0.08603464761505951, 0.060877193801820634, 0.16855482827243715]
+
+Process finished with exit code 0
