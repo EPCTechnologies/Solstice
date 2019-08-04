@@ -6,13 +6,17 @@ def squash(x):
     sigmoidtight = 3.
     return np.exp(x) / (1. + np.exp(sigmoidtight - 2. * sigmoidtight * x))
 
-def bpm_diff(firstbpm, nextbpm, slowestbpm, fastestbpm):
+def bpm_diff(firstbpm, nextbpm, prevbpm, slowestbpm, fastestbpm):
     # Scores compatibility of BPMs using relative difference in BPMs
     # 0 for perfect match (same BPM), 1 for worst possible match
-    # TODO IF ALLOW BPM TO DROP, IT CANNOT DROP CONSECUTIVELY
     bpmrange = fastestbpm - slowestbpm
-    slowpenalty = 5.
-    bpmdropthreshold = 0.99
+
+    if prevbpm < firstbpm:  # penalise consecutive drops in BPM more heavily
+        slowpenalty = 12.
+    else:
+        slowpenalty = 4.
+    bpmdropthreshold = 1.
+
     if nextbpm >= firstbpm:
         return squash((nextbpm - firstbpm) / bpmrange)
     elif (firstbpm - nextbpm) < bpmdropthreshold:  # if reduction in BPM is small it doesn't matter
@@ -21,7 +25,7 @@ def bpm_diff(firstbpm, nextbpm, slowestbpm, fastestbpm):
         return squash(slowpenalty * (firstbpm - nextbpm) / bpmrange)
 
 def key_cam_diff(firstkint, nextkint):
-    # Scores compatibility of keys using heuristics based on Camelot's wheel
+    # Scores compatibility of keys using key mixing heuristics based on Camelot's wheel
     # 0 for perfect match (same key), 1 for all incompatible matches
     diffkint = np.mod(nextkint - firstkint, 120)
     energypenalty = 0.025  # penalise drop in energy level associated with pitch drops

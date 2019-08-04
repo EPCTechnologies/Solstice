@@ -18,7 +18,7 @@ class Track:
         self.name = name
         self.key = key
 
-    def distance(self, nexttrack):
+    def distance(self, nexttrack, *args):
         # TODO CONVERT THIS TO DIFFERENT START AND END TRACKS
         # Combines compatibility of keys and compatibility of BPMs
         # using a Cobb-Douglas form with assigned weights
@@ -30,18 +30,29 @@ class Track:
         nextfreq = nexttrack.freq
         slowestbpm = self.slowestbpm
         fastestbpm = self.fastestbpm
+
+        # If there is a previous track in the route, retrieve it in order
+        # to see if there are consecutive BPM drops to penalise
+        if len(args) == 0:
+            prevtrack = None
+        else:
+            prevtrack = args[0]
+        # Dummy assignment of prevbpm = 0 guarantees no prior drop in BPM
+        prevbpm = 0. if (prevtrack == None) else prevtrack.bpm
+
         # TODO FIND A MORE DYNAMIC WAY OF DETERMINING BPM WEIGHT
-        bpmweight = 0.6
+        bpmweight = 0.5
         keyweight = 1. - bpmweight
-        transitionscore = (wt.bpm_diff(firstbpm, nextbpm, slowestbpm, fastestbpm) ** bpmweight) * \
+        transitionscore = (wt.bpm_diff(firstbpm, nextbpm, prevbpm, slowestbpm, fastestbpm) ** bpmweight) * \
                           (wt.key_diff(firstkint, nextkint, firstfreq, nextfreq) ** keyweight)
+        # Another method of determining transitionscore
         # maxweight = 0.8
         # minweight = 1. - maxweight
         # bpmdiff = wt.bpm_diff(firstbpm, nextbpm, slowestbpm, fastestbpm)
         # keydiff = wt.key_diff(firstkint, nextkint, firstfreq, nextfreq)
         # maxdiff = max(bpmdiff, keydiff)
-        # mindiff = min(bpmdiff, keydiff) # TODO Update
-        # transitionscore = maxweight * maxdiff + minweight * mindiff
+        # mindiff = min(bpmdiff, keydiff)
+        # transitionscore = (maxdiff ** maxweight) * (mindiff ** minweight)
         return transitionscore
 
     def __repr__(self):
@@ -60,10 +71,14 @@ class Fitness:
                 firsttrack = self.route[i]
                 if i + 1 < len(self.route):
                     nexttrack = self.route[i + 1]
-                    pathDistance += firsttrack.distance(nexttrack)
+                    if i == 0:
+                        prevtrack = None  # Just a dummy assignment for the starting track
+                    else:
+                        prevtrack = self.route[i - 1]
+                    pathDistance += firsttrack.distance(nexttrack, prevtrack)
                 # else: # Do not need to return to start node
                     # nexttrack = self.route[0]
-                    # pathDistance += firsttrack.distance(nexttrack) # This is not required
+                    # pathDistance += firsttrack.distance(nexttrack, prevtrack) # This is not required
             self.distance = pathDistance
         return self.distance
 
