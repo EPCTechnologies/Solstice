@@ -1,4 +1,3 @@
-C:\Users\weexi\PythonWorkspace\Solstice\venv\Scripts\python.exe C:/Users/weexi/PythonWorkspace/Solstice/main.py
 Library Details:
     ID                                              Track  BPM  Key
 0    1             Armin van Buuren & Shapov - Our Origin  132   Am
