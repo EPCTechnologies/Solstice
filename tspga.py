@@ -40,8 +40,8 @@ class Track:
         # Dummy assignment of prevbpm = 0 guarantees no prior drop in BPM
         prevbpm = 0. if (prevtrack == None) else prevtrack.bpm
 
-        # TODO FIND A MORE DYNAMIC WAY OF DETERMINING BPM WEIGHT
-        bpmweight = 0.5
+        # TODO Typical ranges: 0.4-0.5 for BPM < 132, 0.5-0.6 for BPM > 132
+        bpmweight = 0.45
         keyweight = 1. - bpmweight
         transitionscore = (wt.bpm_diff(firstbpm, nextbpm, prevbpm, slowestbpm, fastestbpm) ** bpmweight) * \
                           (wt.key_diff(firstkint, nextkint, firstfreq, nextfreq) ** keyweight)

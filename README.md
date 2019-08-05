@@ -1,6 +1,7 @@
 # Solstice
 
 An algorithm is proposed in Python to automate the sorting of music tracks to generate a feasible tracklist for listening or DJ-ing purposes.
+Applications of this algorithm include the smart sorting of consumers' music libraries in online music streaming platforms, as well as the automated generation of tracklists in radio stations or DJ sets.
 The problem is formulated as a Hamiltonian Path Problem reduced to an Asymmetric Travelling Salesman Problem,
 with individual tracks in a user's music library represented as nodes in a complete directed graph,
 and whereby the starting and ending nodes are different and free for optimization.
@@ -10,7 +11,8 @@ The incompatibility between keys are measured using common key mixing heuristics
 as well as using the Vassilakis' equation for root tone dissonance.
 The metrics are passed through a sigmoid squashing function to introduce nonlinearity and then combined using the Cobb-Douglas function.
 The problem is solved using a version of the heuristic Genetic Algorithm modified to preserve the properties of the formulated problem.
-Applications of this algorithm include the smart sorting of consumers' music libraries in online music streaming platforms, as well as the automated generation of tracklists in radio stations or DJ sets.
+
+Keywords: Electronic music, Graph Theory, Hamiltonian path, Travelling Salesman, Genetic Algorithm, Camelot wheel, Vassilakis' equation, Tonal dissonance
 
 ### Formulation of Hamiltonian Path Problem
 ...
@@ -20,10 +22,12 @@ Applications of this algorithm include the smart sorting of consumers' music lib
 
 #### Mismatch in BPM
 ...
+Which BPM is preferred - time signature is always 4/4
 Consecutive drops in BPM (previous track history)...
 
 #### Incompatibility of musical keys
 ...
+How are musical keys determined - intro/outro musical keys (symmetrical) vs. chorus keys (major vs. minor)
 Camelot wheel...
 Energy drop penalty...
 Vassilakis' equation (root tone)...
@@ -37,3 +41,4 @@ Cobb-Douglas
 ### Implementation and Tests
 ...
 Selection of GA parameters...
+How the weights can be adjusted depending on context (e.g. 124-128 BPM vs. 140 BPM - 138 BPM)...

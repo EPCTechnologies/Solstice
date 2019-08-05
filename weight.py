@@ -14,7 +14,8 @@ def bpm_diff(firstbpm, nextbpm, prevbpm, slowestbpm, fastestbpm):
     if prevbpm < firstbpm:  # penalise consecutive drops in BPM more heavily
         slowpenalty = 12.
     else:
-        slowpenalty = 4.
+        # TODO Typical ranges: 3-4 for BPM ranges of 124-130, 4-6 for 130-140
+        slowpenalty = 3.5
     bpmdropthreshold = 1.
 
     if nextbpm >= firstbpm:

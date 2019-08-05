@@ -1,0 +1,107 @@
+Library Details:
+    ID                                              Track  BPM  Key
+0    1    Ariana Grande - 7 Rings (Robert Cristian Remix)  122  C#m
+1    2  Armin van Buuren & Avian Grays feat. Jordan Sh...  128   C#
+2    3  Armin van Buuren & Luke Bond feat. KARRA - Rev...  130  F#m
+3    4       Avicii - Heaven (Syzz & Rave Republic Remix)  128    A
+4    5  Avicii feat. Aloe Blacc - SOS (Lucas & Steve R...  128   Fm
+5    6                   Blasterjaxx - Children Of Today   130  F#m
+6    7  BTS feat. Halsey - Boy With Luv (Anthony Santi...  124    D
+7    8          Calvin Harris - I'm Not Alone (2019 Edit)  128  D#m
+8    9  David Guetta & MORTEN feat. Aloe Blacc - Never...  126  F#m
+9   10  David Guetta, Bebe Rexha & J Balvin - Say My N...  128  A#m
+10  11  Ed Sheeran & Justin Bieber - I Don't Care (Jon...  124   F#
+11  12                Fedde Le Grand - All Over The World  127  F#m
+12  13                         Francisco Cunha - For Life  127    E
+13  14         Hardwell feat. Trevor Guthrie - Summer Air  126    E
+14  15       Jonas Brothers - Sucker (Gerrit Faber Remix)  128  C#m
+15  16                 KSHMR & Timmy Trumpet - The People  135   Em
+16  17  Lauv & Troye Sivan - I'm So Tired (Keanu Silva...  124    B
+17  18  Lewis Capaldi - Someone You Loved (Future Huma...  124   C#
+18  19            Manse, Greencoast & David Shane - Shine  128   A#
+19  20  Marshmello feat. Chvrches - Here With Me (Coli...  123   Cm
+20  21  Nicky Romero & Stadiumx feat. Sam Martin - Lov...  127  C#m
+21  22                     NWYR - Artificial Intelligence  132   Am
+22  23     Panic! At The Disco - High Hopes (Gozzi Remix)  126    F
+23  24  R3HAB × A Touch Of Class (ATC) - All Around Th...  125   Am
+24  25  Sam Smith & Normani - Dancing With A Stranger ...  126   G#
+25  26  Shawn Mendes - If I Can't Have You (STVCKS Remix)  124    D
+26  27  Steve Aoki feat. BTS - Waste It On Me (W&W Remix)  143    G
+27  28  Taylor Swift feat. Brendon Urie - ME! (RudeLie...  126    C
+28  29  Tiesto & Jonas Blue feat. Rita Ora - Ritual (C...  123  D#m
+29  30                 W&W vs. Nicky Romero - Ups & Downs  129   G#
+30  31   Will Sparks feat. Luciana - My Spine Is Tingling  127  G#m
+Initial distance: 24.531204466478588
+Final distance: 4.058935565264905
+Initial Route Details:
+[30: W&W vs. Nicky Romero - Ups & Downs (129, Ab)
+, 4: Avicii - Heaven (Syzz & Rave Republic Remix) (128, A)
+, 3: Armin van Buuren & Luke Bond feat. KARRA - Revolution (130, F#m)
+, 24: R3HAB × A Touch Of Class (ATC) - All Around The World (La La La) (125, Am)
+, 17: Lauv & Troye Sivan - I'm So Tired (Keanu Silva Remix) (124, B)
+, 28: Taylor Swift feat. Brendon Urie - ME! (RudeLies Remix) (126, C)
+, 20: Marshmello feat. Chvrches - Here With Me (Colin Jay Remix) (123, Cm)
+, 23: Panic! At The Disco - High Hopes (Gozzi Remix) (126, F)
+, 13: Francisco Cunha - For Life (127, E)
+, 12: Fedde Le Grand - All Over The World (127, F#m)
+, 8: Calvin Harris - I'm Not Alone (2019 Edit) (128, Ebm)
+, 19: Manse, Greencoast & David Shane - Shine (128, Bb)
+, 29: Tiesto & Jonas Blue feat. Rita Ora - Ritual (Club Mix) (123, Ebm)
+, 1: Ariana Grande - 7 Rings (Robert Cristian Remix) (122, Dbm)
+, 26: Shawn Mendes - If I Can't Have You (STVCKS Remix) (124, D)
+, 10: David Guetta, Bebe Rexha & J Balvin - Say My Name (Afrojack & Chasner Remix) (128, Bbm)
+, 22: NWYR - Artificial Intelligence (132, Am)
+, 15: Jonas Brothers - Sucker (Gerrit Faber Remix) (128, Dbm)
+, 2: Armin van Buuren & Avian Grays feat. Jordan Shaw - Something Real (128, Db)
+, 5: Avicii feat. Aloe Blacc - SOS (Lucas & Steve Remix) (128, Fm)
+, 11: Ed Sheeran & Justin Bieber - I Don't Care (Jonas Blue Remix) (124, F#)
+, 21: Nicky Romero & Stadiumx feat. Sam Martin - Love You Forever (127, Dbm)
+, 27: Steve Aoki feat. BTS - Waste It On Me (W&W Remix) (143, G)
+, 16: KSHMR & Timmy Trumpet - The People (135, Em)
+, 9: David Guetta & MORTEN feat. Aloe Blacc - Never Be Alone (126, F#m)
+, 6: Blasterjaxx - Children Of Today  (130, F#m)
+, 7: BTS feat. Halsey - Boy With Luv (Anthony Santi Remix) (124, D)
+, 14: Hardwell feat. Trevor Guthrie - Summer Air (126, E)
+, 31: Will Sparks feat. Luciana - My Spine Is Tingling (127, Abm)
+, 25: Sam Smith & Normani - Dancing With A Stranger (Jacked Remix) (126, Ab)
+, 18: Lewis Capaldi - Someone You Loved (Future Humans Remix) (124, Db)
+]
+[30, 4, 3, 24, 17, 28, 20, 23, 13, 12, 8, 19, 29, 1, 26, 10, 22, 15, 2, 5, 11, 21, 27, 16, 9, 6, 7, 14, 31, 25, 18]
+[0.5497591036916837, 0.10719901423221588, 1.7848188164082723, 1.5426537963838476, 0.364321312047999, 1.7525360914340835, 0.3269447571383368, 0.47735625666520193, 0.16312520445226888, 0.2985720991343911, 0.21812926227918056, 3.110896112846346, 1.449519068277735, 0.26789120412605955, 0.41862866253267805, 0.7288320292781609, 2.699263864251798, 0.11480530662886938, 0.09462567491305178, 2.204549582137049, 0.3247194663788456, 1.06029868340941, 3.0683166406095266, 6.185641048223988, 0.08274401533893304, 1.8168966200459309, 0.2140248589407917, 0.1053612037187036, 0.4670814690635614, 0.42022882004881845]
+Best Route Details:
+[1: Ariana Grande - 7 Rings (Robert Cristian Remix) (122, Dbm)
+, 18: Lewis Capaldi - Someone You Loved (Future Humans Remix) (124, Db)
+, 11: Ed Sheeran & Justin Bieber - I Don't Care (Jonas Blue Remix) (124, F#)
+, 17: Lauv & Troye Sivan - I'm So Tired (Keanu Silva Remix) (124, B)
+, 7: BTS feat. Halsey - Boy With Luv (Anthony Santi Remix) (124, D)
+, 26: Shawn Mendes - If I Can't Have You (STVCKS Remix) (124, D)
+, 24: R3HAB × A Touch Of Class (ATC) - All Around The World (La La La) (125, Am)
+, 28: Taylor Swift feat. Brendon Urie - ME! (RudeLies Remix) (126, C)
+, 23: Panic! At The Disco - High Hopes (Gozzi Remix) (126, F)
+, 19: Manse, Greencoast & David Shane - Shine (128, Bb)
+, 5: Avicii feat. Aloe Blacc - SOS (Lucas & Steve Remix) (128, Fm)
+, 20: Marshmello feat. Chvrches - Here With Me (Colin Jay Remix) (123, Cm)
+, 29: Tiesto & Jonas Blue feat. Rita Ora - Ritual (Club Mix) (123, Ebm)
+, 9: David Guetta & MORTEN feat. Aloe Blacc - Never Be Alone (126, F#m)
+, 3: Armin van Buuren & Luke Bond feat. KARRA - Revolution (130, F#m)
+, 6: Blasterjaxx - Children Of Today  (130, F#m)
+, 12: Fedde Le Grand - All Over The World (127, F#m)
+, 21: Nicky Romero & Stadiumx feat. Sam Martin - Love You Forever (127, Dbm)
+, 15: Jonas Brothers - Sucker (Gerrit Faber Remix) (128, Dbm)
+, 4: Avicii - Heaven (Syzz & Rave Republic Remix) (128, A)
+, 13: Francisco Cunha - For Life (127, E)
+, 14: Hardwell feat. Trevor Guthrie - Summer Air (126, E)
+, 31: Will Sparks feat. Luciana - My Spine Is Tingling (127, Abm)
+, 8: Calvin Harris - I'm Not Alone (2019 Edit) (128, Ebm)
+, 10: David Guetta, Bebe Rexha & J Balvin - Say My Name (Afrojack & Chasner Remix) (128, Bbm)
+, 2: Armin van Buuren & Avian Grays feat. Jordan Shaw - Something Real (128, Db)
+, 25: Sam Smith & Normani - Dancing With A Stranger (Jacked Remix) (126, Ab)
+, 30: W&W vs. Nicky Romero - Ups & Downs (129, Ab)
+, 22: NWYR - Artificial Intelligence (132, Am)
+, 16: KSHMR & Timmy Trumpet - The People (135, Em)
+, 27: Steve Aoki feat. BTS - Waste It On Me (W&W Remix) (143, G)
+]
+[1, 18, 11, 17, 7, 26, 24, 28, 23, 19, 5, 20, 29, 9, 3, 6, 12, 21, 15, 4, 13, 14, 31, 8, 10, 2, 25, 30, 22, 16, 27]
+[0.15248728498927155, 0.06643715355118407, 0.06446868179755874, 0.2842607136816582, 0.04742587317756677, 0.25436635916697287, 0.12821073366168387, 0.0668924449617454, 0.08575959992707233, 0.20694745090256975, 0.8991052622759816, 0.16862351571239328, 0.2400493491477124, 0.08274401533893304, 0.04742587317756677, 0.40429812794960324, 0.06261421050671698, 0.0547164701228437, 0.10699379646184329, 0.24805278525054178, 0.19295054528280556, 0.1053612037187036, 0.07146795760094897, 0.06413968435648076, 0.10822323086803298, 0.3960479098378992, 0.07232086951365078, 0.3135099040466148, 0.09297404725292946, 0.2668231829819217]
+
+Process finished with exit code 0

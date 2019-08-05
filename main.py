@@ -6,7 +6,7 @@ import music as ms
 import tspga as tg
 
 # Import library data
-library_df = pd.read_excel('./excel/library3.xlsx', sheet_name=0)# print(library_df)
+library_df = pd.read_excel('./excel/library4.xlsx', sheet_name=0)# print(library_df)
 print("Library Details:")
 print(library_df)
 tracklist = []
@@ -68,5 +68,5 @@ print(bestRouteWeight)
 plt.plot(progress)
 plt.ylabel('Distance')
 plt.xlabel('Generation')
-plt.savefig('./output/progress.png', format="png")
+plt.savefig('./output/progress4.png', format="png")
 #plt.show()
